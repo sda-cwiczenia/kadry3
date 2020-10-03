@@ -23,4 +23,9 @@ public class EmployeeService {
         return repository.findAll();
     }
 
+    public List<Employee> findByFirstNameAndLastName(String firstName,
+                                                    String lastName) {
+        return repository.findByFirstNameAndLastName(firstName, lastName);
+    }
+
 }
